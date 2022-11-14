@@ -1,0 +1,10 @@
+these classes will all be located in the game.py file
+game:
+    This class will contain all data about the game that isn't part of any other class and the functions for ineracting wih the game.
+    It will also contain all objects that are a part of the game and all data that isn't part of another object. 
+player:
+    This class contains all information about the player (for example position, speed, direction). It should also contain the player's movement code. 
+enemy:
+    This class should contain the basic code an data about the enemies, for example the movement code (for pathfinding to the target) and the transitions between modes
+blinky/pinky/inky/clyde: 
+    These classes inherit from enemy, but add their own specific code. For example: setting the target and ghost house behaviour. 

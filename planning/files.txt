@@ -1,0 +1,10 @@
+game.py:
+    This file contains the game class. Create an instance of this class to start a game. Use the advance method of this class to advance one frame. 
+display.py:
+    This file contains the classes/functions to display an instance of the game class in a window to see what's happening in the game. 
+play.py(can be run): 
+    This file will make you able to play the game as a player. Makes use of both game.py and display.py
+train.py(can be run):
+    This file will contain the code to train the neural network without displaying the game for better performance. 
+demonstrate.py(can be run):
+    This code will play out a neural network made with train.py while using display.py to track the progress of the neural networks. 

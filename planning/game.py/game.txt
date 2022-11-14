@@ -1,0 +1,6 @@
+data:
+    game.maze: will contain a matrix that will indicate which tiles are solid. 
+    game.input: will contain an integer indicating what directional button is currently pressed(0=up, 1=down, 2=left, 3=right, 4=none)
+methods:
+    set_input(0=up, 1=down, 2=left, 3=right, 4=none)
+    advance()

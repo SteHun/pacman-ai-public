@@ -1,0 +1,9 @@
+data:
+    x_pos: the actual x position of the player in pixels
+    y_pos: the actual y position of the player in pixels
+    x_tile_pos: the x position of the player in tiles
+    y_tile_pos: the y position of the player in tiles
+    direction: what way the enemy is currently going (0=up, 1=down, 2=left, 3=right)
+methods:
+    set_direction(0=up, 1=down, 2=left, 3=right)
+    set_position(x_pos, y_pos) (only sets x_pos/y_pos and not the tile positions. May be deleted later. )
