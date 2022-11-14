@@ -78,7 +78,7 @@ def calculate_fitness(score, time, dots_left, finished_level):
 
 def eval_genomes(genomes, config):
     #print([(genome, config) for genome in genomes])
-    # sorry for this :(
+    # sorry, this isn´t optimal, but it should be faster
     global pool
     fitnesses = pool.starmap(play_game, [(genome[1], config) for genome in genomes])
     for i, fitness in enumerate(fitnesses):
@@ -86,8 +86,8 @@ def eval_genomes(genomes, config):
 
 
 def train_neat(config):
-    p = neat.Checkpointer.restore_checkpoint("neat-checkpoint-10299")
-    # p = neat.Population(config)
+    # p = neat.Checkpointer.restore_checkpoint("neat-checkpoint-10299")
+    p = neat.Population(config)
     # p.add_reporter(neat.StdOutReporter(True))
     stats = neat.StatisticsReporter()
     p.add_reporter(stats)
